@@ -20,7 +20,9 @@ body {
     position: fixed;
     line-height: 80px;
     text-align: center;
-    background-color: black;
+    background-color: #202020;
+    border-bottom: 2px solid grey;
+    
 }
 
 /* .nav div.logo {
