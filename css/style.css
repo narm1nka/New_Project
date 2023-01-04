@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 62.5%;
-    font-size: 6px;
+    /* font-size: 6px; */
 }
 
 
@@ -19,6 +19,8 @@ body {
     line-height: 65px;
     text-align: center;
     background-color: red;
+    z-index: 1;
+    
 }
 
 
@@ -48,7 +50,7 @@ body {
     text-decoration: none;
     color: #fff;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 15px;
 }
 
 .nav div.main_list ul li a:before {
@@ -99,91 +101,109 @@ body {
 
 
 
-/* Home section */
+/* <!-- =========================================== Section1 start ============================================= --> */
 
 .home {
     width: 100%;
     height: 100vh;
     background-image: url(https://rokstar-portfolio.netlify.app/assets/img/bg/slider-bg.jpg);
     background-position: center top;
-	background-size:cover;
+	/* background-size:cover; */
+    background-repeat: no-repeat;
+}
+
+.forma {
+    width: 100%;
+    height: 200px;
+    background-color: #202020;
+    -webkit-clip-path:polygon(30% 0%, 70% 0%, 100% 0, 100% 37%, 81% 63%, 40% 44%, 0 62%, 0 0);;
+    clip-path:polygon(30% 0%, 70% 0%, 100% 0, 100% 37%, 81% 63%, 40% 44%, 0 62%, 0 0);;
 }
 
 
-
-
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-
-    .nav div.main_list ul li a:before{
-        background: transparent;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .navTrigger {
-        display: block;
-    }
-    .nav .logo_img {
-        margin-left: 13px;
-    }
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 250px;
-        right: 0;
-        left: 0;
-        bottom: 0px;
-        margin-top: 72px;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-        
-        
-        
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: left;
-           
-        padding-left: 15px;
-        
-       
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 14px;
-        
-        
-    }
-    .nav div.media_button {
-        display: block;
-    }
-
-    .nav div.main_list ul li a:before{
-        background: transparent;
-    }
+/* <!-- =========================================== Section1 end ============================================= --> */
 
 
 
 
-    .home {
-        width: 100%;
-    }
-}
+
+
+/* <!-- =========================================== Section2 start ============================================= --> */
+
+.section2_text {
+    width: 100%;
+    height: 80px;
+    float: left;
+  
+    flex-direction: column;
+    
+  }
+
+  .img-fluid {
+    box-shadow: 1px 1px 15px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 15px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 15px 8px rgba(0,0,0,0.75);
+
+  }
+
+
+  .section2_text h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 29px;
+    letter-spacing: 0;
+    color: #222222;
+    line-height: 30px;
+    margin-top: 20px;
+    
+  }
+  
+  .kv::before {
+    content: "";
+    width: 55px;
+    height: 6px;
+    float: left;
+    background-color: #202020;
+  }
+
+  .kv::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    float: left;
+    background-color: #202020;
+    margin-top: 3px;
+  }
+  
+  
+  .sosial_links span {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    margin-top: 30px;
+  }
+
+  .icons {
+    margin-left: 80px;
+    margin-top: -23px;
+  }
+
+ .sosial_links a {
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    margin-right: 10px;
+ }
+
+ /* <!-- =========================================== Section2 end ============================================= --> */
+
+
+
+
+
+
+
+
+
+
+
 
 
